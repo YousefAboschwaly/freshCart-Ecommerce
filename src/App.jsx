@@ -98,7 +98,7 @@ function App() {
           ),
         },
         {
-          path: "https://ecommerce-mu-drab-46.vercel.app/allorders",
+          path: "allorders",
           element: (
             <ProtectedRoute>
               <Home />
