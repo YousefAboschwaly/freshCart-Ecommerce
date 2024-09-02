@@ -19,12 +19,12 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import CartContextProvider from "../Context/CartContext";
 import { Toaster } from "react-hot-toast";
 import Checkout from "./Components/Checkout/Checkout";
-import Allorders from "./Components/Allorders/Allorders";
 import WishList from "./Components/WishList/WishList";
 import WishListContextProvider from "../Context/WishListContext";
-import ForgetPassword from './Components/Forget-Password/ForgetPassword';
-import VerifyCode from './Components/Verify-Code/VerifyCode';
-import ResetPassword from './Components/Reset-Password/ResetPassword';
+import ForgetPassword from "./Components/Forget-Password/ForgetPassword";
+import VerifyCode from "./Components/Verify-Code/VerifyCode";
+import ResetPassword from "./Components/Reset-Password/ResetPassword";
+import Allorders from "./Components/Allorders/Allorders";
 let query = new QueryClient();
 
 function App() {
@@ -98,7 +98,7 @@ function App() {
           ),
         },
         {
-          path: "https://ecommerce-mu-drab-46.vercel.app/allorders",
+          path: "allorders",
           element: (
             <ProtectedRoute>
               <Home />
