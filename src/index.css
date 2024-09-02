@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.active{
+  @apply block py-2 px-3 text-white bg-[#4fa74f] rounded lg:bg-transparent lg:text-[#4fa74f] lg:p-0 dark:text-white lg:dark:text-blue-500 
+
+}
+nav li{
+  @apply transition-all duration-500
+}
+nav li:hover:not(.active):not(.cart) {
+  color: #4fa74f;
+}
+.btn{
+  @apply py-2 px-4  cursor-pointer  transition-all duration-500   hover:brightness-90 rounded-md text-white
+}
+
+.product:hover .btn{
+  @apply translate-y-0 opacity-100
+}
+.product:hover{
+  box-shadow: 1px 1px 10px #4fa74f;
+}
+.img-CategorySlider{
+
+  object-position: center;
+  object-fit: cover;
+  display: block;
+}
+
+.form-control{
+  @apply  my-5 py-[.375rem] px-[.75rem] rounded-md text-base border border-[#dee2e6] transition-all duration-150  focus:text-[#212529] focus:border-[#86b7fe] focus:ring-4 focus:ring-[#0d6efd40] focus:outline-none
+}
+
+.toast-style{
+  @apply bg-[#4FA74F] text-white p-4 
+  
+}
+
